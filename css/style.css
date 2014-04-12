@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*--STYLES FOR TITLE--
+Made by Alejandro Facio
+Date. April 9th 2014.
+
+To BitwebMkt
+*/
+
+
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@font-face {font-family: 'itcfranklingothic_lt_bookcnRg'; src: url('fonts/itc_franklin_gothic_lt_book_condensed-webfont.eot'); src: url('fonts/itc_franklin_gothic_lt_book_condensed-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/itc_franklin_gothic_lt_book_condensed-webfont.woff') format('woff'), url('fonts/itc_franklin_gothic_lt_book_condensed-webfont.ttf') format('truetype'), url('fonts/itc_franklin_gothic_lt_book_condensed-webfont.svg#itcfranklingothic_lt_bookcnRg') format('svg'); font-weight: normal;font-style: normal;}
+
+html,body{font-size: 100%; font-family: 'itcfranklingothic_lt_bookcnRg'; /*font-family: 'Droid Serif',serif;*/  -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; font-smoothing: grayscale;}
+
+/*--helper clases--*/
+.right{float: right;}
+.left{float: left;}
+.inline{display: inline-block; vertical-align: middle;}
+.minus{text-transform: lowercase;}
+.mayus{text-transform: uppercase;}
+.violet{background: #9d3393;}
+.blue{background: #0db3dd;}
+.blue-sky{background: #006ac1;}
+.orange{background: #fcba2f;}
+.yellow{background: #ffb50f;}
+.red{background: #b01736;}
+
+/*--Class General--*/
+header{background: url(../img/bg.jpg) repeat-x; position: relative; height: 108px;}
+header a{text-decoration: none;}
+footer{background: #0067bd; color: #fff;}
+.container-sub{margin-bottom: 50px;}
+.container h1{color: #fff; text-align: center; padding: 2.5%}
+h1{text-align: center; color: #912388; font-weight: bold; padding: 2.5%;}
+.container-sub h3, .press h3{color: #fff; font-weight: normal; text-align: center; padding: 2.5%}
+.container h2, .container-sub h2{font-family: 'Droid Serif',serif; font-size: 1.3em; font-weight: normal; color: #22469c;}
+.container h1{font-size: 1.7em;}
+.container-sub h3{font-size: 1.6em;}
+.container-sub h4{margin: 0 0 5% 0; color: #fff; padding: 2.5%; font-size: 1.6em;}
+.container-sub .date, .container-sub h5{margin: 0; display: inline-block; vertical-align: top;}
+.container-sub .date{text-align: right; width: 27%;}
+.container-sub h5{color: #2b4ca8; font-size: 1em;	 font-weight: normal; width: 72%;}
+.container span{color: #22469c;}
+.container em{font-family: 'Droid Serif',serif; font-size: .87em;}
+.container a, .container-sub a, .press a{color: #9d3393; text-decoration: none; font-weight: bold; transition: color .25s ease;}
+.container a:hover, .container a:active, .container-sub a:hover, .container-sub a:active, .press a:hover, .press a:active{color: #0067bd;}
+.container{width: 100%;}
+.inner{margin: 0 auto; padding: 0; width: 96%;}
+.inner-header{margin: 0 auto; padding: 0; width: 100%;}
+.detail{background: #912388; height: 100px; color: #fff; padding: 1.6%; text-align: center;}
+.container-sub .small{font-size: .8em;}
+
+/*--Tableture--*/
+.tableture{background-color:#9d3393; border-radius:6px; padding:0px; width: 88.7%; margin: 20px 0;}
+.tableture ul{margin:0; padding:0; list-style: none; border-right:1px solid #fff; width: 49.8%;}
+.tableture ul li{border-bottom:1px solid #fff; padding:4px 14px; color: #fff; font-size:1em; font-family: 'itcfranklingothic_lt_bookcnRg',sans-serif;}
+.tableture ul li:before {content:'\2022';display: block;position: relative;max-width: 0px;max-height: 0px;left: -9px;top: 1px;color: #fff;font-size: 13px;}
+
+/*--Header--*/
+.logo{position: absolute; left: 45%;}
+.small-search{background: #ffb517; height: 45px; width: 100%; padding: 10px 0; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.search-fld{border-radius: 2px; border: 1px solid rgba(0,103,189,0); margin: 0 0 0 55px; padding: 1%;   width: 150px; display: inline-block; vertical-align: top; transition: border-color .25s ease;}
+.search-fld:focus{border: 1px solid rgba(0,103,189,1);}
+.search-btn{background: #0067bd; border-radius: 2px; color: #fff; font-weight: bold; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid rgba(0,70,143,0); padding: 1%; margin: 0; transition: background .25s ease, color .25s ease;width: 26%; display: inline-block; vertical-align: top;}
+.search-btn:active{background: #fff; color: #0067bd;}
+
+/*--Index--*/
+.slide-mob{display: none;}
+.slide{display: block; margin: 0 auto; max-width: 1024px; width: 100%;}
+.ec{border-bottom: 1px dashed #FFB517; padding: 1.6% 0;}
+.links-img{margin: 0 auto; width: 96%;}
+.success{width: 48.4%;}
+.radio, .common{width: 25%;}
+
+/*--Footer--*/
+footer img{display: block; margin: 0 auto;}
+footer p{text-align: center; font-size: .9em; margin: 0;}
+footer ul{padding: 2.5% 0; list-style: outside none; width: 100%;}
+footer ul li{border-right: 1px solid #fff; float: left; margin-bottom: 2.5%; text-align: center; width: 11%;}
+footer ul li:last-child{border: none;}
+footer ul li a{color: #fff; padding: 0; text-decoration: none;}
+
+/*Avid Elementary Research Basis */
+.brochure{display: block; margin: 0 auto;}
+.brochure{box-shadow: 0px 4px 5px #999;}
+.video{width: 276px; margin: 20px auto}
+
+/*Parents*/
+.parents{display: block; margin: 0 auto; max-width: 498px; width: 100%;}
+
+/*About*/
+.ab-section{padding: 0; margin: 0; list-style: outside none; width: 50%;}
+.ab-section li{border-bottom: 1px dashed #FFB517; margin: 0 1.6%;}
+.about{display: block; margin: 0 auto; max-width: 353px; width: 50%;}
+
+/*What is Avid*/
+.wia{display: block; margin: 0 auto; width: 100%;}
+.philosophy{background: #efecec; padding: 1.6%; width: 60%; margin: 0 auto; text-align: center;}
+.philosophy strong{color: #22469c; margin: 0 auto; width: 80%;}
+.phitext{width: 150px; margin: 0 auto;}
+
+/*Training*/
+.training{display: block; margin: 0 auto; max-width: 495px; width: 100%;}
+
+/*Students Resourse*/
+.students{display: block; margin: 0 auto; max-width: 586px; width: 100%;}
+
+/*Educator Resourse*/
+.educator{display: block; margin: 3% auto 0 auto; max-width: 541px; width: 100%;}
+.logo-educator{display: block; margin: 0 auto;}
+
+/*News Room*/
+.title{color: #fff;}
+.press{background: #e1e2e2; width: auto; position: relative; padding: 2.5% 0 0 0; margin-bottom: 2.5%;}
+.press-img{position: absolute; top: -15px; left: 0;}
+.press p{padding: 1.6%;}
+.press ul{padding: 0; margin: 0; list-style: outside none;}
+.press ul li{width: 32.97%; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: top; margin-right: 4px; padding-right: 4px; border-right: 1px dashed #999;}
+.press ul li:last-child{margin-right: 0; border: none; padding-right: 0;}
+
+/*--Current--*/
+.current{}
+
+/* Mobiles (portrait and landscape) ----------- */
+@media all and  (min-width : 320px) and (max-width : 759px){
+.slide-mob{display: block; margin: 0 auto; max-width: 759px; width: 100%;}
+.slide{display: none;}
+.logo{position: absolute; left: 30%;}
+.tableture ul{float: none; border-right: none; width: 100%;}
+.ab-section{float: none; width: 100%;}
+.philosophy{width: auto;}
+.links-img{margin: 0 auto; width: 100%;}
+.success{width: 100%;}
+.radio, .common{width: 49.3%;}
+.container-sub .date{width: 27%;}
+.container-sub h5{width: 72%;}
+.press ul li{width: 100%; border: none; padding-right: 0;}
+
+footer ul li{border-right: 1px solid #fff; float: left; margin-bottom: 4%; text-align: center; width: 49%;}
+footer ul li:nth-child(2n){border: none;}
+footer ul li:last-child{margin-bottom: 2.5%; border:none;}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media all and (min-width : 760px) and (max-width : 1024px) {
+
+}
+
+/* Desktop, Notebook and Large screens ----------- */
+@media all and (min-width : 1600px) { 
+
+}
